@@ -84,7 +84,7 @@ def tic_tac_toe(board):
     horizontal = [x for x in board]
     vertical = [x for x in zip(*board)]
     diagonal_up_down = [board[i][i] for i, v in enumerate(board)]
-    diagonal_down_up = [board[len(board)-i][i] for i, v in enumerate(board)]
+    diagonal_down_up = [(board[(len(board)-1)-i][i] for i, v in enumerate(board)]
     
     
     
